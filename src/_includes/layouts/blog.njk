@@ -1,0 +1,12 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+  <div class="flex">
+    <a class="block p-4 hover:underline" href="/">Home</a>
+  </div>
+  <article class="mx-auto max-w-[40rem] p-4">
+    <h1 class="text-3xl text-center my-8">{{ title }}</h1>
+    <div class="flex flex-col gap-4">
+      {{ content | safe }}
+    </div>
+  </article>
+{% endblock %}

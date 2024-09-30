@@ -1,0 +1,9 @@
+<ul>
+  {%- for post in collections.post -%}
+    <li>
+      <a href="{{ post.url | url }}" class="text-sky-700 hover:underline">
+        {{ post.data.title }}
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>
