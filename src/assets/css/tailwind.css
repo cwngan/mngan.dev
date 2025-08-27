@@ -9,4 +9,7 @@
   h2 {
     @apply text-xl
   }
+  a {
+    @apply text-sky-700 hover:underline
+  }
 }
